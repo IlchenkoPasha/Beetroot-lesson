@@ -31,6 +31,16 @@ body {
   text-shadow: 3px 3px 13px rgb(0, 0, 0);
 }
 
+.header__menu li a:hover {
+  color: rgb(0, 0, 0);
+  transition: 1.5s;
+  
+}
+
+.header__nav {
+  text-decoration: none;
+}
+
 .hero {
   padding-top: 35px;
   padding-bottom: 100px;
@@ -52,8 +62,6 @@ body {
 .about {
   text-align: center;
   background-color: #f6f6f6;
-  
-  
 }
 
 .about__wrapper {
@@ -62,19 +70,16 @@ body {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
-  
 }
 .skills {
   text-align: center;
   font-size: 18px;
 }
 
-
 .skills__wrapper {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 
 .skills__menu {
   padding-top: 50px;
@@ -103,11 +108,9 @@ body {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
-  
 }
 .portfolio__link {
-  color:black
- 
+  color: black;
 }
 .fashion_img {
   width: 100%;
@@ -134,18 +137,14 @@ body {
   border-radius: 20px;
   width: 180px;
   height: 42px;
-  font-size: 25px ;
-  
+  font-size: 25px;
 }
 
 .footer__link {
   padding: 41px 10px 0px 41px;
-
 }
-
 
 .bottom__text {
   padding-top: 50px;
   /* width: 247px; */
-  
 }
