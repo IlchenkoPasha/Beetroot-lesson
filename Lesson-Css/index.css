@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.header__nav {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.header__menu li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.header__menu li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 3px 3px 13px rgb(0, 0, 0);
+}
+
+.hero {
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.hero__title {
+  margin: 0 0 38px 0;
+}
+
+.hero__photo {
+  width: 100%;
+}
+
+.title {
+  font-size: 34px;
+  padding-bottom: 50px;
+}
+
+.about {
+  text-align: center;
+  background-color: #f6f6f6;
+  
+  
+}
+
+.about__wrapper {
+  max-width: 480px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+.skills {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.skills__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.skills__menu {
+  padding-top: 50px;
+}
+
+.skills__menu li {
+  display: inline-block;
+}
+
+.skills__program {
+  color: gray;
+}
+
+.skills__img {
+  padding-bottom: 22px;
+}
+
+.img__star {
+  padding: 50px 40px 50px;
+}
+.portfolio {
+  background-color: #f6f6f6;
+}
+.portfolio__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+.portfolio__link {
+  color:black
+ 
+}
+.fashion_img {
+  width: 100%;
+}
+.reebok__img {
+  padding-top: 128px;
+  width: 100%;
+}
+.braun__img {
+  padding-top: 136px;
+}
+.footer__wrapper {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.footer__button {
+  padding: 78px;
+}
+
+.footer__message {
+  background-color: black;
+  color: #f6f6f6;
+  border-radius: 20px;
+  width: 180px;
+  height: 42px;
+  font-size: 25px ;
+  
+}
+
+.footer__link {
+  padding: 41px 10px 0px 41px;
+
+}
+
+
+.bottom__text {
+  padding-top: 50px;
+  /* width: 247px; */
+  
+}
