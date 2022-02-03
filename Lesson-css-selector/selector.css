@@ -1,0 +1,141 @@
+* {
+  transition: all 0.1s ease-in;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background-color: #3b3f45;
+  border: rgb(255, 255, 255) solid 10px;
+}
+.header {
+  background-color: #4a4f56;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.header__top {
+  color: #ff8984;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__bot {
+  color: #ff8984;
+  font-size: 14px;
+}
+
+.list {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 534px;
+  width: 100%;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+}
+
+label.one {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+label.two {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+label.three {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+label.four {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+label.five {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+label.six {
+  padding-left: 16px;
+  font-size: 18px;
+}
+.list__inner {
+  background-color: #88839e;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.list__inner:nth-child(even) {
+  background-color: #7a7593;
+}
+
+.list__inner:hover {
+  background-color: #625e77;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+.list__inner:active {
+  background-color: #ee8979;
+}
+
+input:checked + label {
+  text-decoration: line-through 1.5px;
+  color: #9b96ac;
+}
+
+.one::after {
+  content: "(for the next lessons about CSS)";
+  font-size: 11px;
+  padding-left: 3px;
+}
+
+.two::after {
+  content: "(for more CSS manipulations)";
+  font-size: 11px;
+  padding-left: 3px;
+}
+.three::after {
+  content: "(because they are awesome)";
+  font-size: 11px;
+  padding-left: 3px;
+}
+.four::after {
+  content: "(hm... they always dissapear)";
+  font-size: 11px;
+  padding-left: 3px;
+}
+.six::after {
+  content: "(for my friends)";
+  font-size: 11px;
+  padding-left: 3px;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.footer__wrapper {
+  background-color: #4a4f56;
+  color: #ff8984;
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+}
