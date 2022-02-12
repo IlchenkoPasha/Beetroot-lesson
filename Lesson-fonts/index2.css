@@ -11,12 +11,11 @@ body {
 }
 
 h2 {
-  font-size: 36px; /*какой нада  */
-  line-height: 1em; /*какой нада  */
+  font-size: 36px; 
+  line-height: 1em; 
 }
-sub {
-  font-size: 20px; /*какой нада  */
-}
+sup {
+  font-size: 15px; }
 .container {
   max-width: 1200px;
   width: 100%;
@@ -54,4 +53,9 @@ a {
   color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+
+}
+
+.text__background {
+  background-color: #EDEDED;
 }
