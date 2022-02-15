@@ -10,6 +10,11 @@ body {
   background-color: #3b3f45;
   border: rgb(255, 255, 255) solid 10px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
 .header {
   background-color: #4a4f56;
   padding-top: 14px;
