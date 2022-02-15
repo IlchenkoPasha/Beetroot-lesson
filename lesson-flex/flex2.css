@@ -4,6 +4,7 @@
   margin: 0;
   transition: all 0.5s;
 }
+
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -216,6 +217,7 @@ form {
   border: 1px solid #bcd0e5;
   padding: 5px 111px 5px 15px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .footer__logo {
@@ -242,4 +244,6 @@ form {
 
 input {
   border-color: transparent;
+
 }
+/* FOOTER END */
