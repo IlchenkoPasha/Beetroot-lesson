@@ -11,11 +11,12 @@ body {
 }
 
 h2 {
-  font-size: 36px; 
-  line-height: 1em; 
+  font-size: 36px;
+  line-height: 1em;
 }
 sup {
-  font-size: 15px; }
+  font-size: 15px;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -53,9 +54,8 @@ a {
   color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-
 }
 
 .text__background {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
