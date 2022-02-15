@@ -40,6 +40,8 @@ label {
   align-items: center;
   width: 100%;
   padding: 12px;
+  
+  
 }
 
 label.one {
@@ -79,6 +81,8 @@ label.six {
   display: flex;
   align-items: center;
   padding-left: 12px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .list__inner:nth-child(even) {
@@ -86,9 +90,8 @@ label.six {
 }
 
 .list__inner:hover {
-  background-color: #625e77;
-  border-top: 3px solid;
-  border-bottom: 3px solid;
+ border-color: white
+ 
 }
 .list__inner:active {
   background-color: #ee8979;
