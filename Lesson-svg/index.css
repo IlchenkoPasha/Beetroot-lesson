@@ -2,13 +2,80 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  
-    font-family: "Roboto", sans-serif;
+    transition: all 0.5s;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1155px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
   }
+
+.header {
+  padding: 20px 0 100px;
+  
+}
+
+.text {
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #879EB3;
+}
+
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 40px;
+  padding-bottom: 35px;
+}
+
+.groups {
+  display: flex;
+
+}
+
+.group1, .group2, .group3{
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #E3E9F3;
+  border-radius: 8px;
+  padding: 50px 45px 41px 41px; 
+  
+}
+
+.group2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img__svg {
+  padding-bottom: 40px;
+  
+}
+
+.svg__group {
+  border: 1px solid #E3E9F3;
+  border-radius: 8px;
+  
+  
+}
+
+.group__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.group__text {
+  line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
