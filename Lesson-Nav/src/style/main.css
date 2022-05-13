@@ -1,0 +1,204 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+.header {
+  padding: 25px 0;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 35px 0;
+  }
+}
+.header.active .header__nav {
+  opacity: 1;
+  visibility: visible;
+}
+.header.active .nav__opener span {
+  opacity: 0;
+  visibility: hidden;
+}
+.header.active .nav__opener::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 15px;
+}
+.header.active .nav__opener::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 14px;
+}
+.header .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 100vh;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    padding: 0;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .header__nav .nav {
+    margin-right: 50px;
+  }
+}
+.header__nav .nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .header__nav .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 -10px;
+  }
+}
+.header__nav .nav__item {
+  margin: 0 0 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header__nav .nav__item {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+.header__nav .nav__link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2F281E;
+  display: block;
+  text-decoration: none;
+}
+
+.button__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.button__list .button__item {
+  padding: 0 7px;
+}
+
+.nav__opener {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 30px;
+}
+@media (min-width: 768px) {
+  .nav__opener {
+    display: none;
+  }
+}
+.nav__opener::before, .nav__opener::after,
+.nav__opener span {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background-color: black;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.nav__opener::before {
+  top: 0;
+}
+.nav__opener::after {
+  bottom: 0;
+}
+.nav__opener span {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button, .button__white {
+  background-color: #FF9900;
+  border: 1px solid #FF9900;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 11px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.button__white {
+  border-color: #BCD0E5;
+  color: #173A56;
+  background-color: white;
+}
