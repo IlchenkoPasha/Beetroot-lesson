@@ -1,0 +1,371 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1145px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.header {
+  background-color: #5474FD;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .header__wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.header__nav.active .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: #5474FD;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.header__nav.active .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: #5474FD;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+
+.nav__item {
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1024px) {
+  .nav__item {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+}
+
+.header__nav-burger {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1025px) {
+  .header__nav-burger {
+    display: none;
+  }
+}
+
+.header__nav-burger-line {
+  height: 3px;
+  background-color: white;
+  display: inline-block;
+  width: 20px;
+  position: relative;
+}
+
+.header__nav-burger-line::after {
+  height: 3px;
+  background-color: white;
+  width: 20px;
+  position: absolute;
+  top: 6px;
+  content: "";
+}
+
+.header__nav-burger-line::before {
+  height: 3px;
+  background-color: white;
+  width: 20px;
+  position: absolute;
+  top: 12px;
+  content: "";
+}
+
+.hero {
+  height: 820px;
+  width: 100%;
+  background-image: url("../img/section1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.hero__head-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.hero__head-subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.hero__search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+.hero__search-input {
+  height: inherit;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  border: 0;
+}
+
+.hero__search-button {
+  height: inherit;
+  background-color: #5474FD;
+  border: 2px solid #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.hero__search-button__title {
+  margin-right: 10px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero__head {
+  margin-bottom: 50px;
+}
+
+.hero__search-form {
+  margin-bottom: 100px;
+}
+
+.link__title {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hero__search-input::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.icon-search-ico {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.whyus {
+  background-image: url("../img/why-choose-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 155px 0;
+}
+
+.whyus__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyus__wrapper-left {
+  width: 100%;
+  max-width: 670px;
+  padding-right: 110px;
+}
+
+.whyus__wrapper-left a {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: inline-block;
+  background: linear-gradient(45deg, #496bfe 40%, black 40%, #5474fd 40%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.whyus__wrapper-left a:hover {
+  background: linear-gradient(45deg, #5474fd 40%, black 40%, #496bfe 40%);
+}
+
+.whyus__wrapper-right__top {
+  margin-bottom: 10px;
+}
+
+.whyus__wrapper-right__bottom {
+  margin-left: 70px;
+}
+
+.whyus__title {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.whyus__text {
+  margin-bottom: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.icons {
+  background-color: #333333;
+  padding: 100px 0 115px;
+}
+
+.icons__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.icons__wrapper::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 780px;
+  height: 100px;
+  background-image: url("../img/lines.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.icons__inner {
+  text-align: center;
+}

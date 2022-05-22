@@ -1,0 +1,30 @@
+.icons {
+    background-color: #333333;
+    padding: 100px 0 115px;
+}
+
+.icons__wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.icons__wrapper::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 780px;
+    height: 100px;
+    background-image: url('../img/lines.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1; 
+}
+
+.icons__inner {
+    text-align: center;
+}
