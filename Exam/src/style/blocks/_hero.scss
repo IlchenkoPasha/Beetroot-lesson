@@ -1,0 +1,87 @@
+.hero {
+    height: 820px;
+    width: 100%;
+    background-image: url('../img/section1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.hero__head-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.hero__head-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+.hero__search-form {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.hero__search-input {
+    height: inherit;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+}
+
+.hero__search-button {
+    height: inherit;
+    background-color: #5474FD;
+    border: 2px solid #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+
+}
+
+
+.hero__search-button__title {
+    margin-right: 10px;
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero__head {
+    margin-bottom: 50px;
+}
+
+.hero__search-form {
+    margin-bottom: 100px;
+}
+
+
+.link__title {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.hero__search-input::-webkit-input-placeholder { 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .icon-search-ico {
+      color: #ffffff;
+      font-size: 16px;
+  }

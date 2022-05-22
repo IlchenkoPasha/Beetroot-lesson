@@ -1,0 +1,56 @@
+.whyus {
+    background-image: url('../img/why-choose-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 155px 0;
+}
+
+.whyus__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.whyus__wrapper-left {
+    width: 100%;
+    max-width: 670px;
+    padding-right: 110px;
+}
+
+.whyus__wrapper-left a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: inline-block;
+    background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(0,0,0,1) 40%, rgba(84,116,253,1) 40%);
+    transition: all 0.3s;
+}
+
+.whyus__wrapper-left a:hover {
+    background: linear-gradient(45deg, rgba(84,116,253,1) 40%, rgba(0,0,0,1) 40%, rgba(73,107,254,1) 40%);
+}
+
+.whyus__wrapper-right__top {
+    margin-bottom: 10px;
+}
+
+.whyus__wrapper-right__bottom {
+    margin-left: 70px;
+}
+
+.whyus__title {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.whyus__text {
+    margin-bottom: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
