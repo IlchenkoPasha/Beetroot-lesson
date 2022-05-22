@@ -14,7 +14,7 @@
     position: absolute;
     content: '';
     left: 50%;
-    top: -80px;
+    top: -50px;
     transform: translateX(-50%);
     width: 100%;
     max-width: 780px;
@@ -28,5 +28,15 @@
 .icons__inner {
     text-align: center;
     background: #333333;
+    img {
+        margin-bottom: 35px;
+    }
     
+}
+
+.icons__text {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
 }
