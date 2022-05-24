@@ -385,10 +385,10 @@ a {
 .spain {
   background-image: url("../img/spain-backgr.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
   padding-top: 220px;
   padding-bottom: 100px;
-  height: 700px;
   width: 100%;
 }
 
@@ -397,6 +397,7 @@ a {
   background-color: #232323;
   opacity: 0.9;
   padding: 50px 30px;
+  margin-right: auto;
 }
 
 .spain__wrapper a {
@@ -441,12 +442,12 @@ a {
 }
 
 .spain__second {
-  background-image: url("../img/spain-backgr.jpg");
+  background-image: url("../img/spain-back-2.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
   padding-top: 220px;
   padding-bottom: 100px;
-  height: 700px;
   width: 100%;
 }
 
@@ -455,6 +456,7 @@ a {
   background-color: #232323;
   opacity: 0.9;
   padding: 50px 30px;
+  margin-left: auto;
 }
 
 .spain__second-wrapper a {
@@ -477,7 +479,7 @@ a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 1.3;
   margin-bottom: 25px;
 }
 
@@ -486,7 +488,7 @@ a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 1.3;
   margin-bottom: 15px;
 }
 
@@ -494,6 +496,96 @@ a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   margin-bottom: 50px;
+}
+
+.tourist {
+  background-image: url("../img/tourist-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: 50% 50%;
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+
+.tourist__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.tourist__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333333;
+}
+
+.tourist__text {
+  padding: 50px 25px 40px 60px;
+}
+
+.tourist__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.tourist__text-inner {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.icon-quote {
+  font-size: 36px;
+  color: #5474FD;
+}
+
+.footer {
+  background-color: #232323;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.footer__wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.footer__title-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__subtitle-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  padding: 0 8px;
+}
+
+.footer__link:hover {
+  color: #5474FD;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
