@@ -1,0 +1,62 @@
+.spain {
+   background-image: url('../img/spain-backgr.jpg');
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   padding-top: 220px;
+   padding-bottom: 100px;
+   height: 700px;
+   width: 100%;
+    }
+
+.spain__wrapper {
+    width: 550px;
+    background-color: #232323;
+    opacity: 0.9;
+    padding: 50px 30px;
+    
+  
+}    
+
+
+
+
+.spain__wrapper a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px 45px;
+    display: inline-block;
+    background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(0,0,0,1) 40%, rgba(84,116,253,1) 40%);
+    transition: all 0.3s;
+}
+
+.spain__wrapper a:hover {
+    background: linear-gradient(45deg, rgba(84,116,253,1) 40%, rgba(0,0,0,1) 40%, rgba(73,107,254,1) 40%);
+}
+
+.spain__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    
+}
+
+.spain__sub-title {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.spain__text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
