@@ -1,6 +1,6 @@
 .icons {
     background-color: #333333;
-    padding: 100px 0 115px;
+    padding: 120px 0 100px;
 }
 
 .icons__wrapper {
@@ -23,20 +23,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1; 
+
 }
 
 .icons__inner {
     text-align: center;
     background: #333333;
+    border-radius: 50% 50% 0 0;
     img {
         margin-bottom: 35px;
     }
-    
 }
 
 .icons__text {
     font-family: 'Aleo', serif;
     font-weight: 400;
     font-size: 36px;
-    line-height: 26px;
+    line-height: 1.2;
 }

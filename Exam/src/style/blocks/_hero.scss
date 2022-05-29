@@ -22,6 +22,7 @@
     font-weight: 400;
     font-size: 22px;
 }
+
 .hero__search-form {
     display: flex;
     justify-content: center;
@@ -46,9 +47,12 @@
     padding: 20px;
     display: flex;
     align-items: baseline;
-
 }
 
+.hero__search-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
 
 .hero__search-button__title {
     margin-right: 10px;
@@ -67,21 +71,52 @@
     margin-bottom: 100px;
 }
 
-
 .link__title {
-    display: block;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    display: inline-block;
+}
+
+.link__title i {
+    display: block;
 }
 
 .hero__search-input::-webkit-input-placeholder { 
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-  }
+}
 
-  .icon-search-ico {
-      color: #ffffff;
-      font-size: 16px;
-  }
+.icon-search-ico {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero__head-title {
+        font-size: 34px;
+    }
+    
+    .hero__search-form {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero__head-title {
+        font-size: 24px;
+    }
+
+    .hero__search-form {
+        margin-bottom: 30px;
+    }
+}
