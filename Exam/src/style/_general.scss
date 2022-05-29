@@ -12,6 +12,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 ul {
@@ -43,4 +44,9 @@ a {
     font-family: 'Aleo', serif;
     font-weight: 400;
     font-size: 14px;
+}
+
+.icon {
+    color: #FFFFFF;
+    font-size: 16px;
 }

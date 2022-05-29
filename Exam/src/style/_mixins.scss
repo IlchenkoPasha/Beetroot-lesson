@@ -1136,11 +1136,11 @@ $animation-speed: .3s !default;
 // ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 
 @mixin AFS($minS: 16px, $maxS: 6, $minWidth: 320, $maxWidth: 680) {
-  font-size: calc($minS + $maxS * ((100vw - $minWidth + 'px') / $maxWidth));
+ // font-size: calc($minS + $maxS * ((100vw - $minWidth + 'px') / $maxWidth));
 }
 
 @mixin FFS($minS: 16px, $maxS: 6, $minWidth: 320, $maxWidth: 680) {
-  font-size: calc($minS + ($maxS - $minS) * ((100vw - $minWidth + 'px') / ($maxWidth - $minWidth)));
+  //font-size: calc($minS + ($maxS - $minS) * ((100vw - $minWidth + 'px') / ($maxWidth - $minWidth)));
 }
 
 //

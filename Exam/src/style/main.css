@@ -21,6 +21,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 ul {
@@ -52,6 +53,11 @@ a {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+.icon {
+  color: #FFFFFF;
+  font-size: 16px;
 }
 
 .header {
@@ -239,6 +245,11 @@ a {
           align-items: baseline;
 }
 
+.hero__search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .hero__search-button__title {
   margin-right: 10px;
   font-family: "Aleo", serif;
@@ -257,10 +268,14 @@ a {
 }
 
 .link__title {
-  display: block;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  display: inline-block;
+}
+
+.link__title i {
+  display: block;
 }
 
 .hero__search-input::-webkit-input-placeholder {
@@ -274,6 +289,32 @@ a {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 600px;
+  }
+
+  .hero__head-title {
+    font-size: 34px;
+  }
+
+  .hero__search-form {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero__head-title {
+    font-size: 24px;
+  }
+
+  .hero__search-form {
+    margin-bottom: 30px;
+  }
+}
 .whyus {
   background-image: url("../img/why-choose-back.jpg");
   background-repeat: no-repeat;
@@ -304,13 +345,29 @@ a {
   color: #ffffff;
   padding: 15px 30px;
   display: inline-block;
-  background: linear-gradient(45deg, #496bfe 40%, black 40%, #5474fd 40%);
+  background: linear-gradient(45deg, rgb(73, 107, 254) 40%, rgb(0, 0, 0) 40%, rgb(84, 116, 253) 40%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .whyus__wrapper-left a:hover {
-  background: linear-gradient(45deg, #5474fd 40%, black 40%, #496bfe 40%);
+  background: linear-gradient(45deg, rgb(84, 116, 253) 40%, rgb(0, 0, 0) 40%, rgb(73, 107, 254) 40%);
+}
+
+.whyus__wrapper-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.whyus__wrapper-right img {
+  width: 100%;
+  max-width: 350px;
 }
 
 .whyus__wrapper-right__top {
@@ -318,7 +375,8 @@ a {
 }
 
 .whyus__wrapper-right__bottom {
-  margin-left: 70px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .whyus__title {
@@ -336,9 +394,35 @@ a {
   line-height: 26px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .whyus {
+    padding: 80px 0;
+  }
+
+  .whyus__wrapper-left {
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .whyus {
+    padding: 60px 0;
+  }
+
+  .whyus__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .whyus__wrapper-left {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
 .icons {
   background-color: #333333;
-  padding: 100px 0 115px;
+  padding: 120px 0 100px;
 }
 
 .icons__wrapper {
@@ -370,6 +454,7 @@ a {
 .icons__inner {
   text-align: center;
   background: #333333;
+  border-radius: 50% 50% 0 0;
 }
 .icons__inner img {
   margin-bottom: 35px;
@@ -379,11 +464,10 @@ a {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 26px;
+  line-height: 1.2;
 }
 
 .spain {
-  background-image: url("../img/spain-backgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -393,11 +477,22 @@ a {
 }
 
 .spain__wrapper {
-  width: 550px;
-  background-color: #232323;
-  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spain__second .spain__wrapper {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.spain__inner {
+  width: 100%;
+  max-width: 550px;
+  background-color: rgba(35, 35, 35, 0.9);
   padding: 50px 30px;
-  margin-right: auto;
 }
 
 .spain__wrapper a {
@@ -407,13 +502,13 @@ a {
   color: #ffffff;
   padding: 17px 45px;
   display: inline-block;
-  background: linear-gradient(45deg, #496bfe 40%, black 40%, #5474fd 40%);
+  background: linear-gradient(45deg, rgb(73, 107, 254) 40%, rgb(0, 0, 0) 40%, rgb(84, 116, 253) 40%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .spain__wrapper a:hover {
-  background: linear-gradient(45deg, #5474fd 40%, black 40%, #496bfe 40%);
+  background: linear-gradient(45deg, rgb(84, 116, 253) 40%, rgb(0, 0, 0) 40%, rgb(73, 107, 254) 40%);
 }
 
 .spain__title {
@@ -441,65 +536,12 @@ a {
   margin-bottom: 50px;
 }
 
-.spain__second {
-  background-image: url("../img/spain-back-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  padding-top: 220px;
-  padding-bottom: 100px;
-  width: 100%;
+@media only screen and (max-width: 640px) {
+  .spain {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 }
-
-.spain__second-wrapper {
-  width: 550px;
-  background-color: #232323;
-  opacity: 0.9;
-  padding: 50px 30px;
-  margin-left: auto;
-}
-
-.spain__second-wrapper a {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 17px 45px;
-  display: inline-block;
-  background: linear-gradient(45deg, #496bfe 40%, black 40%, #5474fd 40%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.spain__second-wrapper a:hover {
-  background: linear-gradient(45deg, #5474fd 40%, black 40%, #496bfe 40%);
-}
-
-.spain__title {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 25px;
-}
-
-.spain__sub-title {
-  text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 15px;
-}
-
-.spain__text {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 50px;
-}
-
 .tourist {
   background-image: url("../img/tourist-back.jpg");
   background-repeat: no-repeat;
@@ -527,8 +569,20 @@ a {
   background-color: #333333;
 }
 
+.tourist__img {
+  background-image: url("../img/sumon-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 285px;
+  width: 100%;
+  max-width: 445px;
+}
+
 .tourist__text {
   padding: 50px 25px 40px 60px;
+  width: 100%;
+  max-width: 670px;
 }
 
 .tourist__name {
@@ -552,6 +606,17 @@ a {
   color: #5474FD;
 }
 
+@media only screen and (max-width: 640px) {
+  .tourist__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer {
   background-color: #232323;
   padding-top: 120px;
@@ -584,7 +649,7 @@ a {
   padding: 0 8px;
 }
 
-.footer__link:hover {
+.footer__link:hover i {
   color: #5474FD;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;

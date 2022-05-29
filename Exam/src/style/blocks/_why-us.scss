@@ -32,12 +32,23 @@
     background: linear-gradient(45deg, rgba(84,116,253,1) 40%, rgba(0,0,0,1) 40%, rgba(73,107,254,1) 40%);
 }
 
+.whyus__wrapper-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.whyus__wrapper-right img {
+   width: 100%;
+   max-width: 350px;
+}
+
 .whyus__wrapper-right__top {
     margin-bottom: 10px;
 }
 
 .whyus__wrapper-right__bottom {
-    margin-left: 70px;
+    align-self: flex-end;
 }
 
 .whyus__title {
@@ -53,4 +64,29 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .whyus {
+        padding: 80px 0;
+    }
+
+    .whyus__wrapper-left {
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .whyus {
+        padding: 60px 0;
+    }
+
+    .whyus__wrapper {
+        flex-direction: column;
+    }
+
+    .whyus__wrapper-left {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
 }
